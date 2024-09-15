@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A-D-C</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <style>
-        body{
+        html {
+            background-color: rgb(217, 255, 0);
+        }
+
+        body {
             margin: 0px;
-            background-color: #ffffe2;
+            background-color: #e4e4e4;
+            color: rgb(217, 255, 0);
         }
 
         * {
             font-size: 32px;
             font-weight: normal;
-            
+
         }
 
-        span{
-            color: white;
+        span {
+            color: #e4e4e4;
             font-weight: normal;
-            
+
         }
 
         h1 {
@@ -28,23 +37,73 @@
 
         img {
             display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: .2rem;
+            margin: auto;
+            margin-top: .2rem;
+            height: 95vh;
+        }
+
+        .video_wrapper {
+            display: block;
+            margin: auto;
+            margin-top: .2rem;
+            height: 95vh;
+            width: calc(95vh * .7727272727);
+            /* border: 2px solid red; */
+        }
+
+        video {
+            height: 95vh;
+            display: block;
+            margin-left: -15.9vh;
+            clip-path: inset(0px 16vh);
+            overflow: clip;
+        }
+
+
+        .page {
+            margin-left: -16vh;
         }
 
         ::selection {
-  background: #ffb7b7; /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-  background: #ffb7b7; /* Gecko Browsers */
-}
+            background: rgb(217, 255, 0);
+            /* WebKit/Blink Browsers */
+        }
+
+        ::-moz-selection {
+            background: rgb(217, 255, 0);
+            /* Gecko Browsers */
+        }
     </style>
 </head>
+
 <body>
     <h1>Andrew Connors is <span>an artist & graphic designer</span> in Brooklyn.</h1>
-    <img src ="portfolio/AC_portfolio_Page_03.png" width="500" height="600">
-    <img src ="portfolio/AC_portfolio_Page_03.png" width="500" height="600">
-</object>
+    <img src="portfolio/AC_portfolio.png">
+    <img src="portfolio/AC_portfolio2.png">
+
+    <div class="video_wrapper">
+        <video playsinline autoplay muted loop>
+            <source src="portfolio/dotgain_formatted.mp4" type="video/mp4" class="page">
+        </video>
+    </div>
+
+    <img src="portfolio/AC_portfolio4.png">
+    <img src="portfolio/AC_portfolio5.png">
+    <img src="portfolio/AC_portfolio6.png">
+    <img src="portfolio/AC_portfolio7.png">
+    <img src="portfolio/AC_portfolio8.png">
+    <img src="portfolio/hms_page_8.gif">
+    <img src="portfolio/AC_portfolio10.png">
+    <img src="portfolio/AC_portfolio11.png">
+    <img src="portfolio/AC_portfolio12.png">
+    <img src="portfolio/AC_portfolio13.png">
+    <img src="portfolio/AC_portfolio14.png">
+    <img src="portfolio/AC_portfolio15.png">
+    <img src="portfolio/AC_portfolio16.png">
+    <img src="portfolio/AC_portfolio17.png">
+    <img src="portfolio/AC_portfolio18.png">
+    <img src="portfolio/AC_portfolio19.png">
+    </object>
 </body>
+
 </html>
