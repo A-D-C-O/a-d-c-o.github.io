@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A-D-C</title>
+    <title>Ⓒ</title>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -39,30 +39,36 @@
             display: block;
             margin: auto;
             margin-top: .2rem;
-            height: 95vh;
+            height: auto;
+            width: 100vw;
         }
 
         .video_wrapper {
-            display: block;
+            display: flex;
+            justify-content: center;
             margin: auto;
             margin-top: .2rem;
-            height: 95vh;
-            width: calc(95vh * .7727272727);
-            /* border: 2px solid red; */
+            /* width: 150vw; */
+            overflow: hidden;
+            /* height: auto; */
+            /* width: 100vw; */
+            /* width: calc(95vh * .7727272727); */
+            /* border: 2px solid rgb(255, 242, 0); */
         }
 
         video {
-            height: 95vh;
-            display: block;
-            margin-left: -15.9vh;
-            clip-path: inset(0px 16vh);
+            /* height: auto; */
+            /* width: 250vw !important; */
+            /* display: block; */
+            /* margin-left: -14vh; */
+            clip-path: inset(0px 15.2%);
             overflow: clip;
+            /* transform: scale(1.2); */
         }
 
-
-        .page {
+        /* .page {
             margin-left: -16vh;
-        }
+        } */
 
         ::selection {
             background: rgb(217, 255, 0);
@@ -72,6 +78,40 @@
         ::-moz-selection {
             background: rgb(217, 255, 0);
             /* Gecko Browsers */
+        }
+
+        /* Media queries */
+
+        @media (min-width: 600px) {
+            body {
+                /* background-color: #ba1616; */
+            }
+
+            .video_wrapper {
+                height: 95vh;
+                /* width: 200px; */
+                /* padding-left: 20vw; */
+                display: flex;
+                justify-content: center;
+            }
+
+            /* #video_inner_wrapper {
+                border: 2px solid blue;
+                width: 10px;
+            } */
+
+            video {
+                height: 95vh;
+                width: auto;
+                margin: 0;
+                /* transform: translateX(-50%); */
+            }
+
+            img {
+                height: 95vh;
+                width: auto;
+            }
+
         }
     </style>
 </head>
